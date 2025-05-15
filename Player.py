@@ -16,5 +16,5 @@ class Player(GameSprite):
     def update(self):
         keys = pygame.key.get_pressed()
 
-        if keys[self.btn_up]: self.up()
-        if keys[self.btn_down]: self.down()
+        if keys[self.btn_up] and 5 <= self.rect.y: self.up()
+        if keys[self.btn_down] and self.rect.y <= 495-self.rect.height: self.down()
