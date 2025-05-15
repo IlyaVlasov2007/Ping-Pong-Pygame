@@ -1,3 +1,5 @@
+import pygame.key
+
 from GameSprite import *
 
 import sys
@@ -13,6 +15,8 @@ while True:
 
         if e.type == pygame.QUIT:
             sys.exit(0)
+
+        keys = pygame.key.get_pressed()
 
     pygame.display.update()
     pygame.time.Clock().tick(FPS)
