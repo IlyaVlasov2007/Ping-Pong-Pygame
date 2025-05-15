@@ -1,5 +1,3 @@
-import pygame.event
-
 from GameSprite import *
 
 class Player(GameSprite):
