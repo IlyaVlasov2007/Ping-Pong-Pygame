@@ -1,4 +1,5 @@
-import pygame
+from GameSprite import *
+
 import sys
 
 root = pygame.display.set_mode((800, 600))
