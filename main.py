@@ -37,7 +37,5 @@ while True:
     player_left.update()
     player_right.update()
 
-    #root.blit(dest=(0, 0), source=pygame.rect.Rect(x=0, y=0, width=WIDTH, height=HEIGHT))
-
     pygame.display.update()
     pygame.time.Clock().tick(FPS)
